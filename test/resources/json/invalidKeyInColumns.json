@@ -1,0 +1,40 @@
+{
+	"title": "invalidKeyInColumns",
+	"input": {
+		"WHERE": {
+			"OR": [
+				{
+					"EQ": {
+						"sections_avg": 0
+					}
+				},
+				{
+					"EQ": {
+						"sections_avg": 100
+					}
+				},
+				{
+					"GT": {
+						"sections_avg": 99
+					}
+				},
+				{
+					"LT": {
+						"sections_avg": 1
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_id",
+				"sections_avg",
+				""
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

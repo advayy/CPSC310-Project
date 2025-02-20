@@ -1,0 +1,254 @@
+{
+	"title": "ghostProfBoo",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"sections_instructor": "*boo*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_id",
+				"sections_avg",
+				"sections_year",
+				"sections_instructor"
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "poli",
+			"sections_id": "220",
+			"sections_avg": 70.69,
+			"sections_year": 2009,
+			"sections_instructor": "boothe, katherine anne"
+		},
+		{
+			"sections_dept": "ends",
+			"sections_id": "420",
+			"sections_avg": 71.17,
+			"sections_year": 2009,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "hist",
+			"sections_id": "363",
+			"sections_avg": 71.92,
+			"sections_year": 2007,
+			"sections_instructor": "booker, courtney"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "532",
+			"sections_avg": 73.29,
+			"sections_year": 2011,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "poli",
+			"sections_id": "220",
+			"sections_avg": 73.67,
+			"sections_year": 2009,
+			"sections_instructor": "boothe, katherine anne"
+		},
+		{
+			"sections_dept": "poli",
+			"sections_id": "220",
+			"sections_avg": 73.86,
+			"sections_year": 2009,
+			"sections_instructor": "boothe, katherine anne"
+		},
+		{
+			"sections_dept": "hist",
+			"sections_id": "363",
+			"sections_avg": 74.1,
+			"sections_year": 2011,
+			"sections_instructor": "booker, courtney"
+		},
+		{
+			"sections_dept": "hist",
+			"sections_id": "363",
+			"sections_avg": 75.65,
+			"sections_year": 2016,
+			"sections_instructor": "booker, courtney"
+		},
+		{
+			"sections_dept": "hist",
+			"sections_id": "363",
+			"sections_avg": 75.97,
+			"sections_year": 2012,
+			"sections_instructor": "booker, courtney"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "512",
+			"sections_avg": 76.13,
+			"sections_year": 2011,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "scie",
+			"sections_id": "113",
+			"sections_avg": 76.13,
+			"sections_year": 2015,
+			"sections_instructor": "booth, kellogg;oberg, gunilla"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "512",
+			"sections_avg": 76.68,
+			"sections_year": 2010,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "532",
+			"sections_avg": 77.04,
+			"sections_year": 2009,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "520",
+			"sections_avg": 79.38,
+			"sections_year": 2010,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "532",
+			"sections_avg": 79.89,
+			"sections_year": 2013,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "512",
+			"sections_avg": 80.74,
+			"sections_year": 2009,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "549",
+			"sections_avg": 81.21,
+			"sections_year": 2013,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "512",
+			"sections_avg": 81.39,
+			"sections_year": 2015,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "532",
+			"sections_avg": 81.61,
+			"sections_year": 2012,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "520",
+			"sections_avg": 81.83,
+			"sections_year": 2013,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "548",
+			"sections_avg": 83.07,
+			"sections_year": 2013,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "cpsc",
+			"sections_id": "544",
+			"sections_avg": 83.67,
+			"sections_year": 2007,
+			"sections_instructor": "booth, kellogg"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "532",
+			"sections_avg": 83.97,
+			"sections_year": 2014,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "549",
+			"sections_avg": 84.06,
+			"sections_year": 2013,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "548",
+			"sections_avg": 84.17,
+			"sections_year": 2013,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "532",
+			"sections_avg": 84.21,
+			"sections_year": 2015,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "512",
+			"sections_avg": 84.77,
+			"sections_year": 2012,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "501",
+			"sections_avg": 84.8,
+			"sections_year": 2014,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "512",
+			"sections_avg": 84.97,
+			"sections_year": 2013,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "520",
+			"sections_avg": 85.25,
+			"sections_year": 2014,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "501",
+			"sections_avg": 85.57,
+			"sections_year": 2012,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "arch",
+			"sections_id": "512",
+			"sections_avg": 85.62,
+			"sections_year": 2014,
+			"sections_instructor": "meyboom, annalisa"
+		},
+		{
+			"sections_dept": "hist",
+			"sections_id": "699",
+			"sections_avg": 87.75,
+			"sections_year": 2011,
+			"sections_instructor": "booker, courtney"
+		}
+	]
+}

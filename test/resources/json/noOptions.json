@@ -1,0 +1,27 @@
+{
+	"title": "noOptions",
+	"input": {
+		"WHERE": {
+			"OR": [
+				{
+					"IS": {
+						"sections_dept": "cpsc"
+					}
+				},
+				{
+					"IS": {
+						"sections_dept": "engl"
+					}
+				},
+				{
+					"IS": {
+						"sections_dept": "psyc"
+					}
+				}
+			]
+		},
+		"OPTIONS": {}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

@@ -1,0 +1,30 @@
+{
+	"title": "andNot",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"EQ": {
+						"sections_avg": 0
+					}
+				},
+				{
+					"NOT": {
+						"EQ": {
+							"sections_avg": 0
+						}
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_avg"
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": false,
+	"expected": []
+}

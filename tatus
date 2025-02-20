@@ -1,0 +1,15 @@
+[33m06e75bc[m[33m ([m[1;36mHEAD -> [m[1;32madd-refactor[m[33m, [m[1;31morigin/add-refactor[m[33m)[m merge conflicts
+[33md189a5c[m refactored most add helpers out
+[33m5f56b2b[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m Add dataset progress (#6)
+[33m6a4ff33[m Adding query model filter segment (#5)
+[33m8861bce[m Validating query structure (#4)
+[33m4839013[m Merge pull request #3 from CPSC310-2023W-T1/justin-work
+[33m5aea766[m[33m ([m[1;31morigin/justin-work[m[33m)[m implemented helpers for addDataset
+[33mccc5b26[m small edits to addDataset helpers
+[33m6ce4b78[m modify extractAndParseZip method
+[33m401e7fd[m built skeleton for addDataset
+[33m917f3c1[m Merge pull request #2 from CPSC310-2023W-T1/Adding-c0-tests
+[33m008d4fd[m lint fix?
+[33m4538c9a[m Merge pull request #1 from CPSC310-2023W-T1/AJ-Work
+[33mcfa9d81[m Test first commit
+[33m31fe5d0[m Starter files

@@ -1,0 +1,77 @@
+{
+	"title": "zeroHeroFourCol",
+	"input": {
+		"WHERE": {
+			"OR": [
+				{
+					"EQ": {
+						"sections_avg": 0
+					}
+				},
+				{
+					"EQ": {
+						"sections_avg": 100
+					}
+				},
+				{
+					"GT": {
+						"sections_avg": 99
+					}
+				},
+				{
+					"LT": {
+						"sections_avg": 1
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_id",
+				"sections_avg",
+				"sections_pass"
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "frst",
+			"sections_id": "202",
+			"sections_avg": 0,
+			"sections_pass": 0
+		},
+		{
+			"sections_dept": "lfs",
+			"sections_id": "100",
+			"sections_avg": 0,
+			"sections_pass": 0
+		},
+		{
+			"sections_dept": "lfs",
+			"sections_id": "100",
+			"sections_avg": 0,
+			"sections_pass": 0
+		},
+		{
+			"sections_dept": "cnps",
+			"sections_id": "574",
+			"sections_avg": 99.19,
+			"sections_pass": 16
+		},
+		{
+			"sections_dept": "math",
+			"sections_id": "527",
+			"sections_avg": 99.78,
+			"sections_pass": 9
+		},
+		{
+			"sections_dept": "math",
+			"sections_id": "527",
+			"sections_avg": 99.78,
+			"sections_pass": 9
+		}
+	]
+}

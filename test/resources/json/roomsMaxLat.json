@@ -1,0 +1,74 @@
+{
+	"title": "No Title Specified",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"rooms_furniture": "*Tables*"
+					}
+				},
+				{
+					"GT": {
+						"rooms_seats": 200
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"maxLat"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"maxLat"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_shortname"
+			],
+			"APPLY": [
+				{
+					"maxLat": {
+						"MAX": "rooms_lat"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"rooms_shortname": "SRC",
+			"maxLat": 49.2683
+		},
+		{
+			"rooms_shortname": "HEBB",
+			"maxLat": 49.2661
+		},
+		{
+			"rooms_shortname": "LSK",
+			"maxLat": 49.26545
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"maxLat": 49.26486
+		},
+		{
+			"rooms_shortname": "LSC",
+			"maxLat": 49.26236
+		},
+		{
+			"rooms_shortname": "PHRM",
+			"maxLat": 49.26229
+		},
+		{
+			"rooms_shortname": "OSBO",
+			"maxLat": 49.26047
+		}
+	]
+}

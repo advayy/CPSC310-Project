@@ -1,0 +1,129 @@
+{
+	"title": "1900yearcountbug",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_avg": 98
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_avg",
+				"sections_dept",
+				"Bing",
+				"bong"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_dept",
+				"sections_avg"
+			],
+			"APPLY": [
+				{
+					"Bing": {
+						"AVG": "sections_avg"
+					}
+				},
+				{
+					"bong": {
+						"COUNT": "sections_dept"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_avg": 99.19,
+			"sections_dept": "cnps",
+			"Bing": 99.19,
+			"bong": 1
+		},
+		{
+			"sections_avg": 98.75,
+			"sections_dept": "eece",
+			"Bing": 98.75,
+			"bong": 1
+		},
+		{
+			"sections_avg": 98.08,
+			"sections_dept": "epse",
+			"Bing": 98.08,
+			"bong": 1
+		},
+		{
+			"sections_avg": 98.7,
+			"sections_dept": "epse",
+			"Bing": 98.7,
+			"bong": 1
+		},
+		{
+			"sections_avg": 98.36,
+			"sections_dept": "epse",
+			"Bing": 98.36,
+			"bong": 1
+		},
+		{
+			"sections_avg": 98.8,
+			"sections_dept": "epse",
+			"Bing": 98.8,
+			"bong": 1
+		},
+		{
+			"sections_avg": 98.58,
+			"sections_dept": "epse",
+			"Bing": 98.58,
+			"bong": 1
+		},
+		{
+			"sections_avg": 98.76,
+			"sections_dept": "epse",
+			"Bing": 98.76,
+			"bong": 1
+		},
+		{
+			"sections_avg": 98.45,
+			"sections_dept": "epse",
+			"Bing": 98.45,
+			"bong": 1
+		},
+		{
+			"sections_avg": 99.78,
+			"sections_dept": "math",
+			"Bing": 99.78,
+			"bong": 1
+		},
+		{
+			"sections_avg": 98.71,
+			"sections_dept": "nurs",
+			"Bing": 98.71,
+			"bong": 1
+		},
+		{
+			"sections_avg": 98.21,
+			"sections_dept": "nurs",
+			"Bing": 98.21,
+			"bong": 1
+		},
+		{
+			"sections_avg": 98.5,
+			"sections_dept": "nurs",
+			"Bing": 98.5,
+			"bong": 1
+		},
+		{
+			"sections_avg": 98.58,
+			"sections_dept": "nurs",
+			"Bing": 98.58,
+			"bong": 1
+		},
+		{
+			"sections_avg": 98.98,
+			"sections_dept": "spph",
+			"Bing": 98.98,
+			"bong": 1
+		}
+	]
+}

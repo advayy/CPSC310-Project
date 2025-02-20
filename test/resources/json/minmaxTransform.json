@@ -1,0 +1,129 @@
+{
+	"title": "minmaxTransform",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_avg": 98
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_avg",
+				"sections_dept",
+				"mini",
+				"maxi"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_dept",
+				"sections_avg"
+			],
+			"APPLY": [
+				{
+					"mini": {
+						"MIN": "sections_avg"
+					}
+				},
+				{
+					"maxi": {
+						"MAX": "sections_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_avg": 99.19,
+			"sections_dept": "cnps",
+			"mini": 99.19,
+			"maxi": 99.19
+		},
+		{
+			"sections_avg": 98.75,
+			"sections_dept": "eece",
+			"mini": 98.75,
+			"maxi": 98.75
+		},
+		{
+			"sections_avg": 98.08,
+			"sections_dept": "epse",
+			"mini": 98.08,
+			"maxi": 98.08
+		},
+		{
+			"sections_avg": 98.7,
+			"sections_dept": "epse",
+			"mini": 98.7,
+			"maxi": 98.7
+		},
+		{
+			"sections_avg": 98.36,
+			"sections_dept": "epse",
+			"mini": 98.36,
+			"maxi": 98.36
+		},
+		{
+			"sections_avg": 98.8,
+			"sections_dept": "epse",
+			"mini": 98.8,
+			"maxi": 98.8
+		},
+		{
+			"sections_avg": 98.58,
+			"sections_dept": "epse",
+			"mini": 98.58,
+			"maxi": 98.58
+		},
+		{
+			"sections_avg": 98.76,
+			"sections_dept": "epse",
+			"mini": 98.76,
+			"maxi": 98.76
+		},
+		{
+			"sections_avg": 98.45,
+			"sections_dept": "epse",
+			"mini": 98.45,
+			"maxi": 98.45
+		},
+		{
+			"sections_avg": 99.78,
+			"sections_dept": "math",
+			"mini": 99.78,
+			"maxi": 99.78
+		},
+		{
+			"sections_avg": 98.71,
+			"sections_dept": "nurs",
+			"mini": 98.71,
+			"maxi": 98.71
+		},
+		{
+			"sections_avg": 98.21,
+			"sections_dept": "nurs",
+			"mini": 98.21,
+			"maxi": 98.21
+		},
+		{
+			"sections_avg": 98.5,
+			"sections_dept": "nurs",
+			"mini": 98.5,
+			"maxi": 98.5
+		},
+		{
+			"sections_avg": 98.58,
+			"sections_dept": "nurs",
+			"mini": 98.58,
+			"maxi": 98.58
+		},
+		{
+			"sections_avg": 98.98,
+			"sections_dept": "spph",
+			"mini": 98.98,
+			"maxi": 98.98
+		}
+	]
+}

@@ -1,0 +1,6 @@
+{
+	"title": "columnsEmpty",
+	"input": {},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

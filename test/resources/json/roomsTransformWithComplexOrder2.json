@@ -1,0 +1,109 @@
+{
+	"title": "roomsTransformWithComplexOrder2",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"sections_dept": "*cp*"
+					}
+				},
+				{
+					"GT": {
+						"sections_avg": 93
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"maxAvg",
+				"sections_id"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"maxAvg",
+					"sections_id"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_dept",
+				"sections_id"
+			],
+			"APPLY": [
+				{
+					"maxAvg": {
+						"MAX": "sections_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "edcp",
+			"maxAvg": 93.2,
+			"sections_id": "555"
+		},
+		{
+			"sections_dept": "edcp",
+			"maxAvg": 93.25,
+			"sections_id": "562"
+		},
+		{
+			"sections_dept": "edcp",
+			"maxAvg": 93.3,
+			"sections_id": "491"
+		},
+		{
+			"sections_dept": "cpsc",
+			"maxAvg": 93.5,
+			"sections_id": "449"
+		},
+		{
+			"sections_dept": "edcp",
+			"maxAvg": 93.56,
+			"sections_id": "508"
+		},
+		{
+			"sections_dept": "cpsc",
+			"maxAvg": 94,
+			"sections_id": "501"
+		},
+		{
+			"sections_dept": "edcp",
+			"maxAvg": 94.17,
+			"sections_id": "568"
+		},
+		{
+			"sections_dept": "cpsc",
+			"maxAvg": 94.5,
+			"sections_id": "503"
+		},
+		{
+			"sections_dept": "edcp",
+			"maxAvg": 94.86,
+			"sections_id": "564"
+		},
+		{
+			"sections_dept": "edcp",
+			"maxAvg": 95,
+			"sections_id": "473"
+		},
+		{
+			"sections_dept": "cpsc",
+			"maxAvg": 95,
+			"sections_id": "589"
+		},
+		{
+			"sections_dept": "edcp",
+			"maxAvg": 95.58,
+			"sections_id": "377"
+		}
+	]
+}

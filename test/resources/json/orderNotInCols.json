@@ -1,0 +1,28 @@
+{
+	"title": "orderNotInCols",
+	"input": {
+		"WHERE": {
+			"OR": [
+				{
+					"GT": {
+						"sections_avg": 99
+					}
+				},
+				{
+					"GT": {
+						"sections_avg": 99
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_avg"
+			],
+			"ORDER": "sections_uuid"
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}
